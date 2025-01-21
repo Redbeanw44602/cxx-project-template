@@ -5,7 +5,8 @@ target('cxx-project-template')
     add_files('src/**.cpp')
     add_includedirs('src')
     set_warnings('all')
-    set_languages('c99', 'c++20')
+    set_languages('c23', 'c++23')
+
     if is_mode('debug') then 
         add_defines('DEBUG')
     end
